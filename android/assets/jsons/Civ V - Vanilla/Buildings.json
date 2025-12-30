@@ -30,7 +30,7 @@
 		"uniques": ["[+1 Food] from [Deer] tiles [in this city]",
 			"[+1 Food] from [Bananas] tiles [in this city]",
 			"[+1 Food] from [Wheat] tiles [in this city]"],
-		"requiredTech": "Supply Chain Management" 
+		"requiredTech": "Supply Chain" 
 	},
 	{
 		"name": "Automated Water Mill",
@@ -39,16 +39,7 @@
 		"food": 3,
 		"production": 2,
 		"uniques": ["Must be on [River]"],
-		"requiredTech": "Mechanical Engineering"
-	},
-	{
-		"name": "Hydroponic Garden",
-		"replaces": "Floating Gardens",
-		"food": 3,
-		"production": 1,
-		"uniques": ["[+2 Food] from [Lakes] tiles [in this city]", "Must be next to [Fresh water]"],
-		"percentStatBonus": {"food": 15},
-		"requiredTech": "Mechanical Engineering"
+		"requiredTech": "Resource Extraction"
 	},
 
 	/* Science & Intelligence */
@@ -66,18 +57,7 @@
 		"percentStatBonus": {"science": 40},
 		"specialistSlots": {"Scientist": 2},
 		"requiredBuilding": "Local Archive",
-		"uniques": ["[+2 Science] from [Jungle] tiles [in this city]"],
-		"requiredTech": "Education"
-	},
-	{
-		"name": "Global Data Center",
-		"replaces": "Oxford University",
-		"cost": 125,
-		"science": 5,
-		"culture": 2,
-		"isNationalWonder": true,
-		"uniques": ["Only available <if [Local Archive] is constructed in all [non-[Puppeted]] cities>", "Free Technology", "Cost increases by [30] per owned city"],
-		"requiredTech": "Education"
+		"requiredTech": "Data Analysis"
 	},
 
 	/* Economy & Wealth */
@@ -95,15 +75,7 @@
 		"specialistSlots": {"Merchant": 1},
 		"percentStatBonus": {"gold": 30},
 		"requiredBuilding": "Urban Market",
-		"requiredTech": "Banking Systems"
-	},
-	{
-		"name": "Empire Stock Exchange",
-		"replaces": "Stock Exchange",
-		"percentStatBonus": {"gold": 50},
-		"specialistSlots": {"Merchant": 2},
-		"requiredBuilding": "National Bank",
-		"requiredTech": "Power Grid Optimization"
+		"requiredTech": "Venture Capital"
 	},
 
 	/* Defense & Security */
@@ -112,7 +84,7 @@
 		"replaces": "Walls",
 		"cityStrength": 6,
 		"cityHealth": 60,
-		"requiredTech": "Industrial Architecture",
+		"requiredTech": "Urban Planning",
 		"uniques": ["Destroyed when the city is captured"]
 	},
 	{
@@ -121,15 +93,6 @@
 		"maintenance": 1,
 		"uniques": ["New [Military] units start with [20] XP [in this city]", "Destroyed when the city is captured"],
 		"requiredTech": "Security Protocols"
-	},
-	{
-		"name": "Advanced Command Center",
-		"replaces": "Military Base",
-		"cityStrength": 15,
-		"cityHealth": 50,
-		"requiredBuilding": "Steel Perimeter",
-		"requiredTech": "Global Telecommunications",
-		"uniques": ["Destroyed when the city is captured"]
 	},
 
 	/* World Landmarks (Wonders) */
