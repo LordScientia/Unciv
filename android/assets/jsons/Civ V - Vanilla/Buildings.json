@@ -30,7 +30,7 @@
 		"uniques": ["[+1 Food] from [Deer] tiles [in this city]",
 			"[+1 Food] from [Bananas] tiles [in this city]",
 			"[+1 Food] from [Wheat] tiles [in this city]"],
-		"requiredTech": "Pottery"
+		"requiredTech": "Supply Chain Management" 
 	},
 	{
 		"name": "Automated Water Mill",
@@ -39,7 +39,7 @@
 		"food": 3,
 		"production": 2,
 		"uniques": ["Must be on [River]"],
-		"requiredTech": "The Wheel"
+		"requiredTech": "Mechanical Engineering"
 	},
 	{
 		"name": "Hydroponic Garden",
@@ -48,7 +48,7 @@
 		"production": 1,
 		"uniques": ["[+2 Food] from [Lakes] tiles [in this city]", "Must be next to [Fresh water]"],
 		"percentStatBonus": {"food": 15},
-		"requiredTech": "The Wheel"
+		"requiredTech": "Mechanical Engineering"
 	},
 
 	/* Science & Intelligence */
@@ -57,7 +57,7 @@
 		"replaces": "Library",
 		"maintenance": 1,
 		"uniques": ["[+1 Science] per [2] population [in this city]"],
-		"requiredTech": "Writing"
+		"requiredTech": "Legal Documentation"
 	},
 	{
 		"name": "Research Institute",
@@ -87,7 +87,7 @@
 		"gold": 3,
 		"specialistSlots": {"Merchant": 1},
 		"percentStatBonus": {"gold": 25},
-		"requiredTech": "Currency"
+		"requiredTech": "Venture Capital"
 	},
 	{
 		"name": "National Bank",
@@ -95,7 +95,7 @@
 		"specialistSlots": {"Merchant": 1},
 		"percentStatBonus": {"gold": 30},
 		"requiredBuilding": "Urban Market",
-		"requiredTech": "Banking"
+		"requiredTech": "Banking Systems"
 	},
 	{
 		"name": "Empire Stock Exchange",
@@ -103,7 +103,7 @@
 		"percentStatBonus": {"gold": 50},
 		"specialistSlots": {"Merchant": 2},
 		"requiredBuilding": "National Bank",
-		"requiredTech": "Electricity"
+		"requiredTech": "Power Grid Optimization"
 	},
 
 	/* Defense & Security */
@@ -112,7 +112,7 @@
 		"replaces": "Walls",
 		"cityStrength": 6,
 		"cityHealth": 60,
-		"requiredTech": "Masonry",
+		"requiredTech": "Industrial Architecture",
 		"uniques": ["Destroyed when the city is captured"]
 	},
 	{
@@ -120,7 +120,7 @@
 		"replaces": "Barracks",
 		"maintenance": 1,
 		"uniques": ["New [Military] units start with [20] XP [in this city]", "Destroyed when the city is captured"],
-		"requiredTech": "Bronze Working"
+		"requiredTech": "Security Protocols"
 	},
 	{
 		"name": "Advanced Command Center",
@@ -128,7 +128,7 @@
 		"cityStrength": 15,
 		"cityHealth": 50,
 		"requiredBuilding": "Steel Perimeter",
-		"requiredTech": "Telegraph",
+		"requiredTech": "Global Telecommunications",
 		"uniques": ["Destroyed when the city is captured"]
 	},
 
@@ -141,7 +141,7 @@
 		"isWonder": true,
 		"uniques": ["Must be next to [Coast]", "[+1] Movement <for [{Military} {Water}] units>",
 			"[+1] Sight <for [{Military} {Water}] units>", "Gain a free [Lighthouse] [in this city]"],
-		"requiredTech": "Sailing"
+		"requiredTech": "Standardized Shipping"
 	},
 	{
 		"name": "The Grand Archive",
@@ -149,7 +149,7 @@
 		"science": 5,
 		"culture": 2,
 		"isWonder": true,
-		"requiredTech": "Writing",
+		"requiredTech": "Legal Documentation",
 		"uniques": ["Free Technology", "Gain a free [Local Archive] [in this city]"]
 	},
 	{
@@ -157,7 +157,7 @@
 		"replaces": "United Nations",
 		"isWonder": true,
 		"culture": 5,
-		"requiredTech": "Globalization",
+		"requiredTech": "Global Bureaucracy",
 		"uniques": ["Triggers voting for the Diplomatic Victory", "Only available <when [Diplomatic] Victory is enabled>"]
 	}
 ]
