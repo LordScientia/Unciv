@@ -9,13 +9,14 @@
 		"leaderName": "Chief Executive",
 		"adjective": ["Syndicate"],
 		"preferredVictoryType": "Diplomatic",
+		"startingTechs": ["Market Fundamentals"],
 		"introduction": "Welcome to the headquarters. Let's talk numbers.",
 		"neutralHello": "Time is money. What's the proposal?",
 		"outerColor": [28,51,119],
 		"innerColor": [255,255,255],
 		"uniques": [
 			"[+25]% [Gold]", 
-			"Receive a [Great Merchant] unit <upon discovering [Currency]>",
+			"Receive a [Great Merchant] unit <upon discovering [Venture Capital]>",
 			"May buy [Military] units with [Gold] at a [15]% discount"
 		],
 		"cities": ["Neo-Prime", "Gold-Harbor", "Nexus Central", "Trade-Hub Alpha", "Market Point", "Vault City", "Credit Plaza"]
@@ -26,6 +27,7 @@
 		"leaderName": "Grand Architect",
 		"adjective": ["Federation"],
 		"preferredVictoryType": "Scientific",
+		"startingTechs": ["Market Fundamentals"],
 		"introduction": "The future is being built here. Do you have data to share?",
 		"neutralHello": "Logic dictates we should cooperate.",
 		"outerColor": [9, 112, 84],
@@ -43,6 +45,7 @@
 		"leaderName": "Supreme Commander",
 		"adjective": ["Union"],
 		"preferredVictoryType": "Domination",
+		"startingTechs": ["Market Fundamentals"],
 		"introduction": "Strength and industry are the only laws here.",
 		"neutralHello": "Don't get in the way of our production.",
 		"outerColor": [109, 2, 0],
@@ -89,3 +92,4 @@
 			"[Water] units gain the [Unable to pillage tiles] promotion"]
 	}
 ]
+
