@@ -1,50 +1,51 @@
 [
-	/* Ancient & Classical Eras - The Foundations */
+	/* THE CORE FOUNDATIONS - Fixed for Market Fundamentals Tech */
 	{
 		"name": "Construction Crew",
+		"replaces": "Worker",
 		"unitType": "Civilian",
 		"movement": 3,
-		"requiredTech": "Agriculture",
+		"requiredTech": "Market Fundamentals",
 		"uniques": ["Can build [Land] improvements on tiles", "Automation is a primary action"],
 		"cost": 50
 	},
 	{
 		"name": "City Founder",
+		"replaces": "Settler",
 		"unitType": "Civilian",
 		"movement": 3,
 		"cost": 80,
-		"requiredTech": "Agriculture",
+		"requiredTech": "Market Fundamentals",
 		"uniques": ["Founds a new city <by consuming this unit>", "Excess Food converted to Production when under construction",
 			"Requires at least [2] population"],
 		"hurryCostModifier": 10
 	},
 	{
-		"name": "Urban Explorer",
-		"unitType": "Scout",
-		"movement": 3,
-		"strength": 6,
-		"cost": 20,
-		"requiredTech": "Agriculture",
-		"obsoleteTech": "Scientific Theory",
-		"uniques": ["May upgrade to [Elite Archer] through ruins-like effects", "Never appears as a Barbarian unit"],
-		"promotions": ["Ignore terrain cost"],
-		"attackSound": "nonmetalhit"
-	},
-	{
 		"name": "Imperial Guard",
+		"replaces": "Warrior",
 		"unitType": "Sword",
 		"movement": 2,
 		"strength": 10,
 		"cost": 30,
-		"requiredTech": "Agriculture",
-		"obsoleteTech": "Metal Casting",
+		"requiredTech": "Market Fundamentals",
+		"obsoleteTech": "Industrial Construction",
 		"upgradesTo": "Elite Infantry",
-		"uniques" : ["May upgrade to [City Defender] through ruins-like effects"],
-		"attackSound": "nonmetalhit",
-        "civilopediaText": [
-			{"text": "The elite protectors of your growing Empire City."}
-		]
+		"attackSound": "nonmetalhit"
 	},
+    
+    /* BARBARIAN STABILITY UNIT - Keeps the game from crashing */
+    {
+		"name": "Corporate Saboteur",
+		"unitType": "Sword",
+        "uniqueTo": "Barbarians",
+		"movement": 2,
+		"strength": 8,
+		"cost": 20,
+		"attackSound": "nonmetalhit",
+        "civilopediaText": [{"text": "Aggressive rivals trying to steal your market share."}]
+	},
+
+	/* MODERN UNITS - Linked to Tech Tree */
 	{
 		"name": "Elite Archer",
 		"unitType": "Archery",
@@ -52,235 +53,44 @@
 		"strength": 6,
 		"rangedStrength": 10,
 		"cost": 35,
-		"requiredTech": "Archery",
-		"obsoleteTech": "Machinery",
+		"requiredTech": "Security Protocols",
 		"upgradesTo": "Marksman",
 		"attackSound": "arrow"
 	},
-	{
-		"name": "City Defender",
-		"unitType": "Sword",
-		"movement": 2,
-		"strength": 12,
-		"cost": 50,
-		"requiredTech": "Bronze Working",
-		"obsoleteTech": "Civil Service",
-		"upgradesTo": "Heavy Pikeman",
-		"uniques": ["[+100]% Strength <vs [Mounted] units>"],
-		"attackSound": "metalhit"
-	},
-
-	/* Medieval & Renaissance - The Expansion */
-	{
-		"name": "Heavy Pikeman",
-		"unitType": "Sword",
-		"movement": 2,
-		"strength": 18,
-		"cost": 80,
-		"requiredTech": "Civil Service",
-		"uniques": ["[+100]% Strength <vs [Mounted] units>"],
-		"upgradesTo": "Tactical Lancer",
-		"obsoleteTech": "Rifling",
-		"attackSound": "metalhit"
-	},
-	{
-		"name": "Empire Knight",
-		"unitType": "Mounted",
-		"movement": 4,
-		"strength": 22,
-		"cost": 100,
-		"requiredTech": "Chivalry",
-		"obsoleteTech": "Military Science",
-		"upgradesTo": "Cavalry Division",
-		"requiredResource": "Horses",
-		"uniques": ["Can move after attacking","No defensive terrain bonus","[-33]% Strength <vs cities> <when attacking>", "Never appears as a Barbarian unit"],
-		"attackSound": "horse"
-	},
-	{
-		"name": "Marksman",
-		"unitType": "Archery",
-		"movement": 2,
-		"strength": 14,
-		"rangedStrength": 20,
-		"cost": 100,
-		"requiredTech": "Machinery",
-		"upgradesTo": "Rifle Brigade",
-		"obsoleteTech": "Rifling",
-		"uniques": ["[-25]% Strength <vs cities> <when attacking>"],
-		"attackSound": "crossbow"
-	},
-	{
-		"name": "Elite Infantry",
-		"unitType": "Sword",
-		"movement": 2,
-		"strength": 18,
-		"cost": 70,
-		"requiredTech": "Iron Working",
-		"upgradesTo": "Rifle Brigade",
-		"obsoleteTech": "Gunpowder",
-		"requiredResource": "Iron",
-		"attackSound": "metalhit"
-	},
-	{
-		"name": "Rifle Brigade",
-		"unitType": "Gunpowder",
-		"movement": 2,
-		"strength": 30,
-		"cost": 180,
-		"requiredTech": "Rifling",
-		"obsoleteTech": "Replaceable Parts",
-		"upgradesTo": "Modern Infantry",
-		"attackSound": "shot"
-	},
-	{
-		"name": "Cavalry Division",
-		"unitType": "Mounted",
-		"movement": 4,
-		"strength": 30,
-		"cost": 200,
-		"requiredTech": "Military Science",
-		"obsoleteTech": "Combustion",
-		"requiredResource": "Horses",
-		"upgradesTo": "Main Battle Tank",
-		"uniques": ["Can move after attacking","No defensive terrain bonus","[-33]% Strength <vs cities> <when attacking>","Never appears as a Barbarian unit"],
-		"attackSound": "cavalry"
-	},
-
-	/* Modern Era - Industrial Conquest */
 	{
 		"name": "Modern Infantry",
 		"unitType": "Gunpowder",
 		"movement": 3,
 		"strength": 50,
 		"cost": 300,
-		"requiredTech": "Replaceable Parts",
+		"requiredTech": "Global Bureaucracy",
 		"upgradesTo": "Mechanized Force",
 		"attackSound": "shot"
 	},
-	{
-		"name": "Main Battle Tank",
-		"unitType": "Armored",
-		"movement": 5,
-		"strength": 65,
-		"cost": 350,
-		"requiredTech": "Combustion",
-		"requiredResource": "Oil",
-		"upgradesTo": "Advanced Armor",
-		"uniques": ["Can move after attacking", "No defensive terrain bonus", "[-25]% Strength <vs cities> <when attacking>", "Never appears as a Barbarian unit"],
-		"attackSound": "tankshot"
-	},
-	{
-		"name": "Tactical Bomber",
-		"unitType": "Bomber",
-		"movement": 1,
-		"strength": 65,
-		"rangedStrength": 65,
-		"range": 12,
-		"cost": 350,
-		"requiredTech": "Radar",
-		"requiredResource": "Oil",
-		"upgradesTo": "Stealth Striker",
-        "uniques": ["[-33]% Strength <vs [Water] units>"],
-		"attackSound": "bombing"
-	},
-	{
-		"name": "Special Forces",
-		"unitType": "Gunpowder",
-		"movement": 3,
-		"strength": 45,
-		"cost": 350,
-		"requiredTech": "Radar",
-		"uniques": ["May Paradrop to [Land] tiles up to [10] tiles away", "Never appears as a Barbarian unit"],
-		"attackSound": "shot"
-	},
-
-	/* Information Era - The Final Empire */
-	{
-		"name": "Mechanized Force",
-		"unitType": "Gunpowder",
-		"movement": 4,
-		"strength": 70,
-		"cost": 350,
-		"requiredTech": "Electronics",
-		"uniques": ["Never appears as a Barbarian unit"],
-		"attackSound": "tankshot"
-	},
-	{
-		"name": "Advanced Armor",
-		"unitType": "Armored",
-		"movement": 6,
-		"strength": 100,
-		"cost": 400,
-		"requiredTech": "Lasers",
-		"requiredResource": "Aluminum",
-		"upgradesTo": "City Defense Titan",
-		"uniques": ["Can move after attacking", "No defensive terrain bonus", "Never appears as a Barbarian unit"],
-		"attackSound": "tankshot"
-	},
-	{
-		"name": "City Defense Titan",
-		"unitType": "Armored",
-		"movement": 4,
-		"strength": 200,
-		"cost": 425,
-		"requiredTech": "Nuclear Fusion",
-		"requiredResource": "Uranium",
-		"uniques": ["Can move after attacking", "No defensive terrain bonus", "[-33]% Strength <vs cities> <when attacking>", "Never appears as a Barbarian unit"],
-		"attackSound": "gdrAttack"
-	},
-	{
-		"name": "Stealth Striker",
-		"unitType": "Bomber",
-		"movement": 2,
-		"strength": 100,
-		"rangedStrength": 100,
-		"range": 25,
-		"cost": 425,
-		"requiredTech": "Stealth",
-		"requiredResource": "Aluminum",
-		"uniques": ["Damage taken from interception reduced by [100]%", "[+4] Sight", "Can see over obstacles"],
-		"attackSound": "bombing"
-	},
-
-	/* Great People & Specialists */
+    
+    /* GREAT PEOPLE - Optimized for Empire City */
 	{
 		"name": "Lead Architect",
 		"unitType": "Civilian",
-		"uniques": ["Can speed up construction of a building",
-            "Can instantly construct a [Manufactory] improvement <by consuming this unit>",
-            "Is part of Great Person group [Engineer]",
-            "Great Person - [Production]", "Unbuildable", "Uncapturable"],
+		"uniques": ["Can speed up construction of a building", "Can instantly construct a [Manufactory] improvement <by consuming this unit>", "Is part of Great Person group [Engineer]", "Great Person - [Production]", "Unbuildable", "Uncapturable"],
 		"movement": 3
 	},
 	{
 		"name": "Head Scientist",
 		"unitType": "Civilian",
-		"uniques": ["Can hurry technology research",
-            "Can instantly construct a [Academy] improvement <by consuming this unit>",
-            "Is part of Great Person group [Scientist]",
-            "Great Person - [Science]", "Unbuildable", "Uncapturable"],
+		"uniques": ["Can hurry technology research", "Can instantly construct a [Academy] improvement <by consuming this unit>", "Is part of Great Person group [Scientist]", "Great Person - [Science]", "Unbuildable", "Uncapturable"],
 		"movement": 3
 	},
-	{
-		"name": "Empire General",
-		"unitType": "Civilian",
-		"uniques": [
-            "Empire enters a [10]-turn Golden Age <by consuming this unit>",
-            "[+20]% Strength bonus for [Military] units within [3] tiles",
-            "Can instantly construct a [Citadel] improvement <by consuming this unit>",
-			"Can be earned through combat",
-            "Is part of Great Person group [General]",
-			"Great Person - [War]", "Unbuildable", "Uncapturable"],
-		"movement": 3
-	},
-	{
-		"name": "Master Merchant",
-		"unitType": "Civilian",
-		"uniques": ["Can undertake a trade mission with City-State, giving a large sum of gold",
-            "Can instantly construct a [Customs house] improvement <by consuming this unit>",
-            "Is part of Great Person group [Merchant]",
-			"Great Person - [Gold]", "Unbuildable", "Uncapturable"],
-		"movement": 3
+    
+    /* ESSENTIAL WATER UNIT - Prevents soft-locks on islands */
+    {
+		"name": "Industrial Work Boat",
+		"replaces": "Work Boats",
+		"unitType": "Civilian Water",
+		"movement": 4,
+		"cost": 50,
+		"requiredTech": "Standardized Shipping",
+		"uniques": ["May create improvements on water resources", "Uncapturable", "Automation is a primary action"]
 	}
 ]
 
