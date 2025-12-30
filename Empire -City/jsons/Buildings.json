@@ -1,1 +1,127 @@
+[
+	/* Modern Empire Foundations */
+	{
+		"name": "Empire Headquarters",
+		"replaces": "Palace",
+		"isNationalWonder": true,
+		"production": 5,
+		"science": 5,
+		"gold": 5,
+		"culture": 2,
+		"cityStrength": 5.0,
+		"cost": 0,
+		"uniques": ["Indicates the capital city"]
+	},
+	{
+		"name": "City Monument",
+		"replaces": "Monument",
+		"culture": 2,
+		"cost": 40,
+		"maintenance": 1,
+		"uniques": ["Destroyed when the city is captured"]
+	},
+
+	/* Food & Logistics */
+	{
+		"name": "Food Distribution Hub",
+		"replaces": "Granary",
+		"food": 3,
+		"maintenance": 1,
+		"uniques": ["[+1 Food] from [Deer] tiles [in this city]",
+			"[+1 Food] from [Bananas] tiles [in this city]",
+			"[+1 Food] from [Wheat] tiles [in this city]"],
+		"requiredTech": "Supply Chain" 
+	},
+	{
+		"name": "Automated Water Mill",
+		"replaces": "Water Mill",
+		"maintenance": 2,
+		"food": 3,
+		"production": 2,
+		"uniques": ["Must be on [River]"],
+		"requiredTech": "Resource Extraction"
+	},
+
+	/* Science & Intelligence */
+	{
+		"name": "Local Archive",
+		"replaces": "Library",
+		"maintenance": 1,
+		"uniques": ["[+1 Science] per [2] population [in this city]"],
+		"requiredTech": "Legal Documentation"
+	},
+	{
+		"name": "Research Institute",
+		"replaces": "University",
+		"maintenance": 2,
+		"percentStatBonus": {"science": 40},
+		"specialistSlots": {"Scientist": 2},
+		"requiredBuilding": "Local Archive",
+		"requiredTech": "Data Analysis"
+	},
+
+	/* Economy & Wealth */
+	{
+		"name": "Urban Market",
+		"replaces": "Market",
+		"gold": 3,
+		"specialistSlots": {"Merchant": 1},
+		"percentStatBonus": {"gold": 25},
+		"requiredTech": "Venture Capital"
+	},
+	{
+		"name": "National Bank",
+		"replaces": "Bank",
+		"specialistSlots": {"Merchant": 1},
+		"percentStatBonus": {"gold": 30},
+		"requiredBuilding": "Urban Market",
+		"requiredTech": "Venture Capital"
+	},
+
+	/* Defense & Security */
+	{
+		"name": "Steel Perimeter",
+		"replaces": "Walls",
+		"cityStrength": 6,
+		"cityHealth": 60,
+		"requiredTech": "Urban Planning",
+		"uniques": ["Destroyed when the city is captured"]
+	},
+	{
+		"name": "Military Garrison",
+		"replaces": "Barracks",
+		"maintenance": 1,
+		"uniques": ["New [Military] units start with [20] XP [in this city]", "Destroyed when the city is captured"],
+		"requiredTech": "Security Protocols"
+	},
+
+	/* World Landmarks (Wonders) */
+	{
+		"name": "The Great Lighthouse Landmark",
+		"replaces": "The Great Lighthouse",
+		"cost": 185,
+		"culture": 2,
+		"isWonder": true,
+		"uniques": ["Must be next to [Coast]", "[+1] Movement <for [{Military} {Water}] units>",
+			"[+1] Sight <for [{Military} {Water}] units>", "Gain a free [Lighthouse] [in this city]"],
+		"requiredTech": "Standardized Shipping"
+	},
+	{
+		"name": "The Grand Archive",
+		"replaces": "The Great Library",
+		"science": 5,
+		"culture": 2,
+		"isWonder": true,
+		"requiredTech": "Legal Documentation",
+		"uniques": ["Free Technology", "Gain a free [Local Archive] [in this city]"]
+	},
+	{
+		"name": "The Global Hub",
+		"replaces": "United Nations",
+		"isWonder": true,
+		"culture": 5,
+		"requiredTech": "Global Bureaucracy",
+		"uniques": ["Triggers voting for the Diplomatic Victory", "Only available <when [Diplomatic] Victory is enabled>"]
+	}
+]
 
