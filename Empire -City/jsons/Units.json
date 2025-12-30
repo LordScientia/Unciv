@@ -1,1 +1,96 @@
+[
+	/* THE CORE FOUNDATIONS - Fixed for Market Fundamentals Tech */
+	{
+		"name": "Construction Crew",
+		"replaces": "Worker",
+		"unitType": "Civilian",
+		"movement": 3,
+		"requiredTech": "Market Fundamentals",
+		"uniques": ["Can build [Land] improvements on tiles", "Automation is a primary action"],
+		"cost": 50
+	},
+	{
+		"name": "City Founder",
+		"replaces": "Settler",
+		"unitType": "Civilian",
+		"movement": 3,
+		"cost": 80,
+		"requiredTech": "Market Fundamentals",
+		"uniques": ["Founds a new city <by consuming this unit>", "Excess Food converted to Production when under construction",
+			"Requires at least [2] population"],
+		"hurryCostModifier": 10
+	},
+	{
+		"name": "Imperial Guard",
+		"replaces": "Warrior",
+		"unitType": "Sword",
+		"movement": 2,
+		"strength": 10,
+		"cost": 30,
+		"requiredTech": "Market Fundamentals",
+		"obsoleteTech": "Industrial Construction",
+		"upgradesTo": "Elite Infantry",
+		"attackSound": "nonmetalhit"
+	},
+    
+    /* BARBARIAN STABILITY UNIT - Keeps the game from crashing */
+    {
+		"name": "Corporate Saboteur",
+		"unitType": "Sword",
+        "uniqueTo": "Barbarians",
+		"movement": 2,
+		"strength": 8,
+		"cost": 20,
+		"attackSound": "nonmetalhit",
+        "civilopediaText": [{"text": "Aggressive rivals trying to steal your market share."}]
+	},
+
+	/* MODERN UNITS - Linked to Tech Tree */
+	{
+		"name": "Elite Archer",
+		"unitType": "Archery",
+		"movement": 2,
+		"strength": 6,
+		"rangedStrength": 10,
+		"cost": 35,
+		"requiredTech": "Security Protocols",
+		"upgradesTo": "Marksman",
+		"attackSound": "arrow"
+	},
+	{
+		"name": "Modern Infantry",
+		"unitType": "Gunpowder",
+		"movement": 3,
+		"strength": 50,
+		"cost": 300,
+		"requiredTech": "Global Bureaucracy",
+		"upgradesTo": "Mechanized Force",
+		"attackSound": "shot"
+	},
+    
+    /* GREAT PEOPLE - Optimized for Empire City */
+	{
+		"name": "Lead Architect",
+		"unitType": "Civilian",
+		"uniques": ["Can speed up construction of a building", "Can instantly construct a [Manufactory] improvement <by consuming this unit>", "Is part of Great Person group [Engineer]", "Great Person - [Production]", "Unbuildable", "Uncapturable"],
+		"movement": 3
+	},
+	{
+		"name": "Head Scientist",
+		"unitType": "Civilian",
+		"uniques": ["Can hurry technology research", "Can instantly construct a [Academy] improvement <by consuming this unit>", "Is part of Great Person group [Scientist]", "Great Person - [Science]", "Unbuildable", "Uncapturable"],
+		"movement": 3
+	},
+    
+    /* ESSENTIAL WATER UNIT - Prevents soft-locks on islands */
+    {
+		"name": "Industrial Work Boat",
+		"replaces": "Work Boats",
+		"unitType": "Civilian Water",
+		"movement": 4,
+		"cost": 50,
+		"requiredTech": "Standardized Shipping",
+		"uniques": ["May create improvements on water resources", "Uncapturable", "Automation is a primary action"]
+	}
+]
 
