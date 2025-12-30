@@ -1,1 +1,95 @@
+[
+	{
+		"name": "Spectator",
+		"outerColor": [255,255,255]
+	},
+
+	{
+		"name": "The Capital Syndicate",
+		"leaderName": "Chief Executive",
+		"adjective": ["Syndicate"],
+		"preferredVictoryType": "Diplomatic",
+		"startingTechs": ["Market Fundamentals"],
+		"introduction": "Welcome to the headquarters. Let's talk numbers.",
+		"neutralHello": "Time is money. What's the proposal?",
+		"outerColor": [28,51,119],
+		"innerColor": [255,255,255],
+		"uniques": [
+			"[+25]% [Gold]", 
+			"Receive a [Great Merchant] unit <upon discovering [Venture Capital]>",
+			"May buy [Military] units with [Gold] at a [15]% discount"
+		],
+		"cities": ["Neo-Prime", "Gold-Harbor", "Nexus Central", "Trade-Hub Alpha", "Market Point", "Vault City", "Credit Plaza"]
+	},
+
+	{
+		"name": "The Research Federation",
+		"leaderName": "Grand Architect",
+		"adjective": ["Federation"],
+		"preferredVictoryType": "Scientific",
+		"startingTechs": ["Market Fundamentals"],
+		"introduction": "The future is being built here. Do you have data to share?",
+		"neutralHello": "Logic dictates we should cooperate.",
+		"outerColor": [9, 112, 84],
+		"innerColor": [255,255,255],
+		"uniques": [
+			"[+20]% [Science]", 
+			"Free Technology <upon entering a new era>",
+			"[+1 Science] from every [Specialist]"
+		],
+		"cities": ["Cyber-Heights", "Logic Base", "Data-Core", "Synapse City", "Binary Ridge", "Quantum Point", "Silicon Valley"]
+	},
+
+	{
+		"name": "The Iron Union",
+		"leaderName": "Supreme Commander",
+		"adjective": ["Union"],
+		"preferredVictoryType": "Domination",
+		"startingTechs": ["Market Fundamentals"],
+		"introduction": "Strength and industry are the only laws here.",
+		"neutralHello": "Don't get in the way of our production.",
+		"outerColor": [109, 2, 0],
+		"innerColor": [255, 255, 255],
+		"uniques": [
+			"[+15]% [Production]", 
+			"[+15]% Strength <for [All] units>",
+			"[+25]% Production when constructing [Military] units [in all cities]"
+		],
+		"cities": ["Foundry City", "Steel-Port", "Titan-Forge", "Anvil-Point", "Hammer-End", "Iron-Hold", "Industrial-Gate"]
+	},
+
+	// City-States (Kept for Stability)
+	{
+		"name": "Brussels",
+		"adjective": ["Bruxellois"],
+		"cityStateType": "Cultured",
+		"outerColor": [0, 0, 0],
+		"innerColor": [127, 177, 236],
+		"cities": ["Brussels"]
+	},
+	{
+		"name": "Zurich",
+		"adjective": ["Zuricher"],
+		"cityStateType": "Mercantile",
+		"outerColor": [0, 0, 0],
+		"innerColor": [246, 253, 160],
+		"cities": ["Zurich"]
+	},
+    {
+		"name": "Singapore",
+		"adjective": ["Singaporean"],
+		"cityStateType": "Maritime",
+		"outerColor": [0, 0, 0],
+		"innerColor": [246, 253, 160],
+		"cities": ["Singapore"]
+	},
+
+	{
+		"name": "Barbarians",
+		"outerColor": [0,0,0],
+		"innerColor": [185,12,12],
+		"uniques": ["Can only heal by pillaging", "Excluded from map editor",
+			"[Water] units gain the [Unable to pillage tiles] promotion"]
+	}
+]
 
