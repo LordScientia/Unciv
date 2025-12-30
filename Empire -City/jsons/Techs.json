@@ -1,1 +1,145 @@
+[
+	{
+		"columnNumber": 0,
+		"era": "Founding Stage",
+		"techCost": 20,
+		"buildingCost": 40,
+		"wonderCost": 185,
+		"techs": [
+			{
+				"name": "Market Fundamentals",
+				"row": 6,
+				"quote": "'The first rule of any business is that the customer is always right, even when they are wrong.'",
+				"uniques": ["Starting tech"]
+			}
+		]
+	},
+	{
+		"columnNumber": 1,
+		"era": "Founding Stage",
+		"techCost": 35,
+		"buildingCost": 60,
+		"wonderCost": 185,
+		"techs": [
+			{
+				"name": "Supply Chain",
+				"row": 2,
+				"prerequisites": ["Market Fundamentals"],
+				"quote": "'Inventory is money sitting in a warehouse.'"
+			},
+			{
+				"name": "Security Protocols",
+				"row": 7,
+				"prerequisites": ["Market Fundamentals"],
+				"quote": "'The best defense is a well-paid guard.'",
+                "uniques": ["Enables [Imperial Guard]"]
+			},
+			{
+				"name": "Resource Extraction",
+				"row": 9,
+				"prerequisites": ["Market Fundamentals"],
+				"quote": "'The Earth is just a warehouse waiting to be emptied.'"
+			}
+		]
+	},
+	{
+		"columnNumber": 2,
+		"era": "Founding Stage",
+		"techCost": 55,
+		"buildingCost": 75,
+		"wonderCost": 185,
+		"techs": [
+			{
+				"name": "Legal Documentation",
+				"row": 3,
+				"prerequisites": ["Supply Chain"],
+				"uniques": ["Enables Open Borders agreements"],
+				"quote": "'A contract is only as good as the lawyer who wrote it.'"
+			},
+			{
+				"name": "Standardized Shipping",
+				"row": 6,
+				"prerequisites": ["Supply Chain"],
+				"quote": "'The world got smaller when we put it in a box.'"
+			},
+			{
+				"name": "Urban Planning",
+				"row": 9,
+				"prerequisites": ["Resource Extraction"],
+				"quote": "'Concrete is the color of progress.'"
+			}
+		]
+	},
+	{
+		"columnNumber": 3,
+		"era": "Expansion Stage",
+		"techCost": 105,
+		"buildingCost": 100,
+		"wonderCost": 250,
+		"techs": [
+			{
+				"name": "Corporate Philosophy",
+				"row": 3,
+				"prerequisites": ["Legal Documentation"],
+				"uniques": ["Enables Research agreements"],
+				"quote": "'Culture eats strategy for breakfast.'"
+			},
+			{
+				"name": "Data Analysis",
+				"row": 7,
+				"prerequisites": ["Standardized Shipping", "Security Protocols"],
+				"quote": "'In God we trust, everyone else brings data.'"
+			},
+			{
+				"name": "Industrial Construction",
+				"row": 9,
+				"prerequisites": ["Urban Planning"],
+				"quote": "'We shape our buildings; thereafter they shape us.'"
+			}
+		]
+	},
+	{
+		"columnNumber": 4,
+		"era": "Industrial Stage",
+		"techCost": 275,
+		"buildingCost": 120,
+		"wonderCost": 300,
+		"techs": [
+			{
+				"name": "Global Bureaucracy",
+				"row": 4,
+				"prerequisites": ["Corporate Philosophy"],
+				"quote": "'The only thing that saves us from the bureaucracy is its inefficiency.'"
+			},
+			{
+				"name": "Venture Capital",
+				"row": 7,
+				"prerequisites": ["Data Analysis"],
+				"uniques": ["Enables conversion of city production to [Gold]"],
+				"quote": "'Fortune favors the bold, but it pays the investors.'"
+			}
+		]
+	},
+    {
+		"columnNumber": 12,
+		"era": "Digital Age",
+		"techCost": 5100,
+		"buildingCost": 500,
+		"wonderCost": 1250,
+		"techs": [
+			{
+				"name": "Digital Marketing",
+				"row": 5,
+				"prerequisites": ["Venture Capital"],
+				"quote": "'If you are not paying for the product, you are the product.'"
+			},
+			{
+				"name": "Artificial Intelligence",
+				"row": 4,
+				"prerequisites": ["Digital Marketing"],
+				"quote": "'Computers are fast, but they have no mercy.'"
+			}
+		]
+	}
+]
 
